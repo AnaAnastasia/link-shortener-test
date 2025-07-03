@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 require __DIR__.'/auth.php';
 
+Route::redirect('/', '/admin');
 Route::get('/{shortCode}', RedirectController::class);
