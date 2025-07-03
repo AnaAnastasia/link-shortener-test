@@ -25,6 +25,14 @@
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
+            <div>
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}"
+                       class="text-m text-indigo-600 hover:underline font-medium">
+                        {{ __('Register') }}
+                    </a>
+                @endif
+            </div>
         </div>
     </body>
 </html>
